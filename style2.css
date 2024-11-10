@@ -1,0 +1,306 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(blue, pink);
+    color: #FFF;
+    font-family: arial, verdana, helvetica, tahoma, sans-serif;
+    font-size: 80%;
+    line-height: 150%;
+}
+
+img
+{
+	border: 0;
+}
+
+a
+{
+	text-decoration: none;
+	color: #ff8080;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+#centrecontainer
+{
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+}
+
+#outercontainer
+{
+	margin-left: -400px;
+	position: absolute;
+	top: -236px;
+	left: 50%;
+}
+
+#header
+{
+	width: 800px;
+	height: 29px;
+	letter-spacing: 1px;
+}
+
+#container    
+{
+	border: 20px solid #FFF;
+	width: 760px;
+	height: 370px;
+}
+
+#containerleft {
+	float: left;
+	width: 370px;
+	/* Измените ширину для лучшего выравнивания */
+	height: 370px;
+	border-right: 20px solid #FFF;
+	padding: 0;
+	/* Убрали padding */
+	overflow: hidden;
+}
+
+.itc-slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* Добавлено для предотвращения выхода содержимого за границы */
+}
+
+.itc-slider-wrapper {
+	width: 100%;
+	/* Убираем лишний внутренний отступ */
+	height: 100%;
+	margin: 0;
+	/* Центрируем слайдер */
+	background-color: #eee;
+	overflow: hidden;
+	/* Скрываем лишнее содержимое */
+}
+
+.itc-slider-items {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s ease;
+	will-change: transform;
+}
+
+.itc-slider-item {
+	flex: 0 0 100%;
+	max-width: 100%;
+	height: 100%;
+	user-select: none;
+}
+
+
+/* Убедитесь, что кнопки управления также располагаются правильно */
+.itc-slider-btn {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 50px;
+	color: #fff;
+	background: rgb(0 0 0 / 20%);
+	border: none;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.itc-slider-btn {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	background: rgb(0 0 0 / 20%);
+	border: none;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.itc-slider-btn-hide {
+	display: none;
+}
+
+.itc-slider-btn-prev {
+	left: 0;
+}
+
+.itc-slider-btn-next {
+	right: 0;
+}
+
+.itc-slider-btn:hover,
+.itc-slider-btn:focus {
+	color: #fff;
+	text-decoration: none;
+	background: rgb(0 0 0 / 30%);
+	outline: 0;
+}
+
+.itc-slider-btn::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.itc-slider-btn-prev::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.itc-slider-btn-next::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+#containerleft a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#containerleft a:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#containerleft h2 {
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, arial, verdana, tahoma, sans-serif;
+	letter-spacing: -3px;
+	font-size: 250%;
+	text-align: right;
+}
+
+#containerleft a:hover
+{
+	text-decoration: none;
+	color: #ff8080;
+}
+
+#containerleft h2
+{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, arial, verdana, tahoma, sans-serif;
+	letter-spacing: -3px;
+	font-size: 250%;
+	text-align: right;
+}
+
+#containerright
+{
+	float: left;
+	width: 350px;
+	height: 350px;
+	background: #702929;
+	overflow: auto;
+	padding: 10px;
+}
+
+#containerright h2
+{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, arial, verdana, tahoma, sans-serif;
+	letter-spacing: -2px;
+	font-size: 200%;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 5px;
+	width: 75%;
+}
+#header-content {
+	display: flex; /* Используем flexbox */
+	justify-content: space-between; /* Размещаем элементы на противоположных краях */
+	align-items: center; /* Центрируем элементы по вертикали */
+	padding: 10px 20px; /* Добавляем отступы для удобства */
+  }
+  
+  #site-title {
+	font-size: 36px; /* Размер шрифта */
+	font-weight: bold; /* Жирный шрифт */
+	margin: 0; /* Убираем отступы */
+	margin-top: -50px; /* Сдвигаем на 20 пикселей вверх */
+  }
+  
+  
+  #menu ul {
+	display: flex; /* Размещаем элементы меню в ряд */
+	margin: 0; /* Убираем отступы у списка */
+	padding: 0; /* Убираем отступы */
+  }
+  
+  #menu li {
+	list-style: none; /* Убираем маркеры списка */
+	margin-left: 20px; /* Отступ между пунктами */
+  }
+  
+  #menu a {
+	text-decoration: none; /* Убираем подчеркивание */
+	color: black; /* Цвет текста */
+  }
+  
+  
+#footer
+{
+	width: 800px;
+	text-align: right;
+	padding: 5px 0px;
+	color: #ff8080;
+}
+
+#footer a
+{
+	text-decoration: none;
+	color: #ff8080;
+}
+
+#footer a:hover
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+  
+.simple-linear {
+	background: linear-gradient(45deg, #771111, #d99898, #6c1b10, #b03030);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+	width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
