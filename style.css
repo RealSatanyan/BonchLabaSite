@@ -1,55 +1,50 @@
 body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(blue, pink);
-    color: #FFF;
-    font-family: arial, verdana, helvetica, tahoma, sans-serif;
-    font-size: 80%;
-    line-height: 150%;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(blue, pink);
+	color: #FFF;
+	font-family: arial, verdana, helvetica, tahoma, sans-serif;
+	font-size: 80%;
+	line-height: 150%;
 }
 
-img
-{
+
+
+img {
 	border: 0;
 }
 
-a
-{
+a {
 	text-decoration: none;
 	color: #ffdf80;
 }
 
-a:hover
-{
+a:hover {
 	text-decoration: none;
 	color: #FFF;
 }
 
-#centrecontainer
-{
+#centrecontainer {
 	position: absolute;
 	top: 50%;
 	left: 0px;
 	width: 100%;
 }
 
-#outercontainer
-{
+#outercontainer {
 	margin-left: -400px;
 	position: absolute;
 	top: -236px;
 	left: 50%;
 }
 
-#header
-{
+#header {
 	width: 800px;
 	height: 29px;
 	letter-spacing: 1px;
 }
 
-#container    
-{
+#container {
 	border: 20px solid #FFF;
 	width: 760px;
 	height: 370px;
@@ -190,14 +185,12 @@ a:hover
 	text-align: right;
 }
 
-#containerleft a:hover
-{
+#containerleft a:hover {
 	text-decoration: none;
 	color: #fff480;
 }
 
-#containerleft h2
-{
+#containerleft h2 {
 	margin: 0;
 	padding: 0;
 	font-family: helvetica, arial, verdana, tahoma, sans-serif;
@@ -206,8 +199,7 @@ a:hover
 	text-align: right;
 }
 
-#containerright
-{
+#containerright {
 	float: left;
 	width: 350px;
 	height: 350px;
@@ -216,8 +208,7 @@ a:hover
 	padding: 10px;
 }
 
-#containerright h2
-{
+#containerright h2 {
 	margin: 0;
 	padding: 0;
 	font-family: helvetica, arial, verdana, tahoma, sans-serif;
@@ -227,78 +218,143 @@ a:hover
 	padding-bottom: 5px;
 	width: 75%;
 }
+
 #header-content {
-	display: flex; /* Используем flexbox */
-	justify-content: space-between; /* Размещаем элементы на противоположных краях */
-	align-items: center; /* Центрируем элементы по вертикали */
-	padding: 10px 20px; /* Добавляем отступы для удобства */
-  }
-  
-  #site-title {
-	font-size: 36px; /* Размер шрифта */
-	font-weight: bold; /* Жирный шрифт */
-	margin: 0; /* Убираем отступы */
-	margin-top: -50px; /* Сдвигаем на 20 пикселей вверх */
-  }
-  
-  
-  #menu ul {
-	display: flex; /* Размещаем элементы меню в ряд */
-	margin: 0; /* Убираем отступы у списка */
-	padding: 0; /* Убираем отступы */
-  }
-  
-  #menu li {
-	list-style: none; /* Убираем маркеры списка */
-	margin-left: 20px; /* Отступ между пунктами */
-  }
-  
-  #menu a {
-	text-decoration: none; /* Убираем подчеркивание */
-	color: black; /* Цвет текста */
-  }
-  
-  
-#footer
-{
+	display: flex;
+	/* Используем flexbox */
+	justify-content: space-between;
+	/* Размещаем элементы на противоположных краях */
+	align-items: center;
+	/* Центрируем элементы по вертикали */
+	padding: 10px 20px;
+	/* Добавляем отступы для удобства */
+}
+
+#site-title {
+	font-size: 36px;
+	/* Размер шрифта */
+	font-weight: bold;
+	/* Жирный шрифт */
+	margin: 0;
+	/* Убираем отступы */
+	margin-top: -50px;
+	/* Сдвигаем на 20 пикселей вверх */
+}
+
+
+#menu ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	list-style: none;
+	margin-left: 20px;
+}
+
+#menu a {
+	text-decoration: none;
+	color: black;
+}
+
+
+#footer {
 	width: 800px;
 	text-align: right;
 	padding: 5px 0px;
 	color: #ffd780;
 }
 
-#footer a
-{
+#footer a {
 	text-decoration: none;
 	color: #f7ff80;
 }
 
-#footer a:hover
-{
+#footer a:hover {
 	text-decoration: none;
 	color: #FFF;
 }
 
 
-  
+
 .simple-linear {
 	background: linear-gradient(45deg, #9c8315, #f7e600, #d87a1e, #adcf21);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
+	background-size: 400% 400%;
+	animation: gradientAnimation 10s ease infinite;
 	width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+	height: 100vh;
+	overflow: hidden;
 }
 
 @keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
+
+/* #widget {
+	float: left;
+	width: 350px;
+	height: 350px;
+	overflow: auto;
+	padding: 10px;
+	margin: 0;
+	margin-top: -207px;
+	margin-left: 1340px;
+	border: 20px solid #FFF;
+	background: #705729;
+} */
+
+
+.container {
+	position: relative; /* Контейнер для виджета */
+}
+
+#widget {
+	float: right;
+	width: 350px;
+	height: 350px;
+	overflow: auto;
+	padding: 10px;
+	margin: 0;
+	margin-top: -207px;
+	margin-right: -415px;
+	border: 20px solid #FFF;
+	background: #705729;
+	visibility: hidden; /* Скрыто по умолчанию */
+	opacity: 0; /* Прозрачно */
+	transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.container:hover #widget {
+	visibility: visible; /* Делаем видимым */
+	opacity: 1; /* Убираем прозрачность */
+}
+
+.trigger {
+
+	float: right;
+	width: 5px;
+	height: 390px;
+	overflow: auto;
+	padding: 10px;
+	margin: 0;
+	margin-top: -207px;
+	margin-right: 350px;
+	background: #ffffff;
+	color: #000000;
+	writing-mode: vertical-rl;
+	text-align: center;
+	line-height: 5px;
+	cursor: pointer;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Visibility</title>
+    <style>
+        .container {
+            position: relative; /* Контейнер для виджета */
+        }
+
+        #widget {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 350px;
+            padding: 10px;
+            background: #705729;
+            border: 20px solid #FFF;
+            visibility: hidden; /* Скрыто по умолчанию */
+            opacity: 0; /* Прозрачно */
+            transition: visibility 0.3s ease, opacity 0.3s ease;
+        }
+
+        .container:hover #widget {
+            visibility: visible; /* Делаем видимым */
+            opacity: 1; /* Убираем прозрачность */
+        }
+
+        .trigger {
+            width: 150px;
+            height: 50px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="trigger">Наведи на меня</div>
+        <div id="widget">Я видим только при наведении!</div>
+    </div>
+</body>
+</html>
